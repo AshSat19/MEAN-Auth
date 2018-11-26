@@ -1,27 +1,14 @@
 # MEANAuth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+The repo holds both client-side as well as server-side code.
+Before using, ensure that you have installed the latest version of Node, NPM and Angular CLi on your device.
 
-## Development server
+## How to Use
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Clone the repository to a directory in your device
+- Install all the dependencies by running 'npm i --save' inside the cloned Angular project folder as well as within the 'api' folder
+- Once dependencies are installed, test the project by running 'ng serve' in the cloned folder and 'node app.js' in the 'api'folder
+- If all goes weel, you should now have a login page greeting you at 'http://localhost:4200'
+- Please note that you can check the success of login only through the server-side log as no page has been defined for the redirection after successful login.
+- Feelfree to report any bugs you find
