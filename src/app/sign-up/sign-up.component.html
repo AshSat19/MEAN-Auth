@@ -1,0 +1,51 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+</head>
+
+<section class="inner-banner">
+  <div class="section-title-inner text-center py-3">
+    <h1 class="bold white text-upper">SIGN UP</h1>
+  </div>
+</section>
+
+<div class="container py-5">
+    <div class="row justify-content-center">        
+      <div class="col-md-6">
+            <mat-card style="border: 3px solid black; border-radius: 20px; padding: 2rem;">
+              <form *ngIf="!isLoading" (submit)="onSignUp(signUpForm)" #signUpForm="ngForm">
+                <mat-form-field>
+                  <input 
+                  matInput 
+                  type="email"
+                  name="email" 
+                  ngModel
+                  placeholder="Email"
+                  required
+                  email
+                  #emailInput=ngModel>
+                  <mat-error *ngIf="emailInput.invalid">Please enter a valid Email Id</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                  <input 
+                  matInput 
+                  type="password"
+                  name="password" 
+                  ngModel
+                  placeholder="Password"
+                  required
+                  #passwordInput=ngModel>
+                  <mat-error *ngIf="passwordInput.invalid">Please enter a valid Password</mat-error>
+                </mat-form-field>
+                <button mat-flat-button type="submit" color="warn">SIGN UP</button>
+              </form>
+              <mat-progress-bar *ngIf="isLoading" mode="indeterminate" color="warn"></mat-progress-bar>
+          </mat-card>
+        </div> 
+      </div>
+    </div>
