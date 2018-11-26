@@ -11,4 +11,4 @@ Before using, ensure that you have installed the latest version of Node, NPM and
 - Once dependencies are installed, test the project by running 'ng serve' in the cloned folder and 'node app.js' in the 'api'folder
 - If all goes well, you should now have a login page greeting you at 'http://localhost:4200'
 - Please note that you can check the success of login only through the server-side log as no page has been defined for the redirection after successful login.
-- Feelfree to report any bugs you find
+- Feel free to report any bugs you find
